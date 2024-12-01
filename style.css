@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: ivory;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Estilo do header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+header img {
+  height: 100px;
+  margin-right: 16px;
+}
+
+header h1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+/* Estilo do formulário */
+.form-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #FFA56F;
+  border-radius: 10px;
+  padding: 6px;
+  margin-right: 4px;
+}
+
+form input:hover {
+  background-color: peachpuff;
+}
+
+form button {
+  padding: 4px;
+  background-color: #FFA56F;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+form button:hover {
+  background-color: peachpuff;
+}
+
+/* Estilo da tabela */
+.table-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Ajustes gerais */
+table {
+  align-items: center;
+  font-size: 23px;
+  max-width: 480px;
+  /* Define um tamanho máximo */
+  width: 100%;
+  /* A largura será 100% do container */
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  background-color: #FFA56F;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  table-layout: fixed;
+  /* Tamanho fixo das colunas */
+}
+
+td {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  padding: 4px 15px;
+  /* Espaço interno */
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+  /* Texto alinhado à esquerda */
+  white-space: nowrap;
+  /* Impede quebra de texto */
+  overflow: hidden;
+  /* Esconde conteúdo que ultrapassa o tamanho */
+  text-overflow: ellipsis;
+  /* Adiciona reticências para texto longo */
+}
+
+.task-item {
+  display: flex;
+  /* Ativa o flexbox */
+  justify-content: space-between;
+  /* Espaça os itens entre as extremidades */
+  align-items: center;
+  /* Alinha verticalmente no centro */
+  padding: 8px;
+  /* Espaçamento interno */
+  width: 100%;
+  /* Ocupa toda a largura */
+}
+
+.task-text {
+  flex-grow: 1;
+  /* Faz o texto ocupar o máximo de espaço */
+  margin-right: 10px;
+  /* Espaço entre o texto e os ícones */
+}
+
+.task-icon {
+  cursor: pointer;
+  width: 20px;
+  /* Tamanho do ícone */
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+  /* Espaço entre os ícones */
+}
+
+/* Garantindo que as colunas da tabela tenham tamanhos consistentes */
+th,
+td {
+  width: 100%;
+  /* Coluna ocupa largura total */
+}
+
+.completed {
+  text-decoration: line-through;
+  /* Risco no texto */
+  color: gray;
+  /* Cor cinza */
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #FFA56F;
+  font-size: 17px;
+  font-weight: normal;
+  color: papayawhip;
+  margin-top: auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <img src="./images/note.png" alt="checklist">
+    <h1>Lista de Tarefas</h1>
+  </header>
+  <div class="form-container">
+    <form id="inputs-form">
+      <input type="text" id="task-name" required placeholder="Ex: Beber água." />
+      <button type="submit" title="Adicionar" id="botao-adicionar">Adicionar</button>
+      <button type="button" title="Limpar" id="botao-limpar">Limpar</button>
+    </form>
+  </div>
+  <div class="table-container" id="table-container">
+    <!-- A tabela será criada dinamicamente aqui -->
+  </div>
+  <footer>
+    &copy; 2024 - Todos os direitos reservados - CunhaCoderX
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
